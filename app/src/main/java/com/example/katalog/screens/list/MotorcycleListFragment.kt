@@ -113,8 +113,4 @@ class MotorcycleListFragment : Fragment() {
         Motorcycle.filterCategory = categoryID
         (recyclerView.adapter as MotorcycleListViewAdapter).filterMotorcycles()
     }
-
-    fun onMotorcycleClick(){
-
-    }
 }

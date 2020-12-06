@@ -50,7 +50,7 @@ class MotorcycleListViewAdapter(
             modelTV.text = motorcycle.model
             categoryTV.text = motorcycle.category.name
             favouriteIMGB.setImageResource(if (motorcycle.isFavourite.value!!) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
-            favouriteIMGB.setOnClickListener { motorcycle.switchFavourite() }
+            favouriteIMGB.setOnClickListener { motorcycle.switchFavourite(); filterMotorcycles() }
             itemView.setOnClickListener { onMotorcycleClick((parent as Fragment).requireView(), motorcycle) }
         }
 
