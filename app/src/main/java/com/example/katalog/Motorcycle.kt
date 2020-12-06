@@ -1,8 +1,8 @@
-package com.example.katalog.data
+package com.example.katalog
 
 import android.os.Parcelable
 import androidx.lifecycle.MutableLiveData
-import com.example.katalog.R
+import com.example.katalog.data.Category
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize

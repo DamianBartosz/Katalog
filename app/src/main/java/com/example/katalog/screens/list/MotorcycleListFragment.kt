@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.katalog.data.Motorcycle
+import com.example.katalog.Motorcycle
 import com.example.katalog.R
 import com.example.katalog.data.Category
 

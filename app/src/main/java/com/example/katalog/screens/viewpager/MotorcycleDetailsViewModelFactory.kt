@@ -2,7 +2,7 @@ package com.example.katalog.screens.viewpager
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.katalog.data.Motorcycle
+import com.example.katalog.Motorcycle
 import java.lang.IllegalArgumentException
 
 class MotorcycleDetailsViewModelFactory(private val selectedMotorcycle: Motorcycle) : ViewModelProvider.Factory {

@@ -9,7 +9,7 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.katalog.data.Motorcycle
+import com.example.katalog.Motorcycle
 import com.example.katalog.R
 
 class MotorcycleListViewAdapter(
