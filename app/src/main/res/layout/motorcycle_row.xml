@@ -3,28 +3,55 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
-    android:layout_marginBottom="30dp"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:padding="10dp">
 
+
+    <ImageView
+        android:id="@+id/mainMotorcycleIMGV"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/main_photo_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_report_image" />
 
     <TextView
         android:id="@+id/brandTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
-        android:text="brand"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/brand_placeholder"
+        app:layout_constraintBottom_toTopOf="@id/modelTV"
+        app:layout_constraintStart_toEndOf="@id/mainMotorcycleIMGV"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/modelTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="10dp"
-        android:text="model"
-        app:layout_constraintStart_toEndOf="@id/brandTV"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/model_placeholder"
+        app:layout_constraintBottom_toTopOf="@id/categoryTV"
+        app:layout_constraintStart_toStartOf="@id/brandTV"
+        app:layout_constraintTop_toBottomOf="@id/brandTV" />
+
+    <TextView
+        android:id="@+id/categoryTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category_placeholder"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/modelTV"
+        app:layout_constraintTop_toBottomOf="@id/modelTV" />
+
+    <ImageButton
+        android:id="@+id/favouriteIMGB"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/favourite_button_description"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_off"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

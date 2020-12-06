@@ -11,16 +11,16 @@
         android:label="fragment_motorcycle_list"
         tools:layout="@layout/fragment_motorcycle_list" >
         <action
-            android:id="@+id/action_motorcycleListFragment_to_motorcycleDetailsFragment"
-            app:destination="@id/motorcycleDetailsFragment" />
+            android:id="@+id/action_motorcycleListFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
     </fragment>
     <fragment
-        android:id="@+id/motorcycleDetailsFragment"
-        android:name="com.example.katalog.screens.details.MotorcycleDetailsFragment"
-        android:label="fragment_motorcycle_details"
-        tools:layout="@layout/fragment_motorcycle_details" >
-        <action
-            android:id="@+id/action_motorcycleDetailsFragment_to_motorcycleListFragment"
-            app:destination="@id/motorcycleListFragment" />
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.katalog.screens.viewpager.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <argument
+            android:name="selectedMotorcycle"
+            app:argType="com.example.katalog.Motorcycle" />
     </fragment>
 </navigation>

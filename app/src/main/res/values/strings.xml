@@ -1,5 +1,26 @@
 <resources>
     <string name="app_name">Katalog</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="brand_placeholder">Brand</string>
+    <string name="model_placeholder">Model</string>
+    <string name="category_placeholder">Category</string>
+    <string name="horsepower_placeholder">Horsepower</string>
+    <string name="accessory_placeholder">Accessory</string>
+    <string name="main_photo_description">Main motorcycle Photo</string>
+    <string name="photo_description">Motorcycle photo</string>
+    <string name="favourite_button_description">Favourite button</string>
+
+    <string name="category_name_all">All</string>
+    <string name="category_name_sport">Sport</string>
+    <string name="category_name_tourer">Tourer</string>
+    <string name="category_name_naked">Naked</string>
+    <string name="category_name_cruiser">Cruiser</string>
+    <string name="category_name_supermoto">Supermoto</string>
+    <string name="action_name_favorite">Favourite</string>
+
+    <string name="brand_details_name">Brand: %s</string>
+    <string name="model_details_name">Model: %s</string>
+    <string name="horsepower_details_name">Horsepower: %.1f</string>
+    <string name="category_details_name">Category: %s</string>
 </resources>

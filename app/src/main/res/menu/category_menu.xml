@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@android:drawable/btn_star_big_off"
+        android:title="@string/action_name_favorite"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/category_all"
+        android:title="@string/category_name_all"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/category_sport"
+        android:title="@string/category_name_sport"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/category_tourer"
+        android:title="@string/category_name_tourer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/category_naked"
+        android:title="@string/category_name_naked"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/category_cruiser"
+        android:title="@string/category_name_cruiser"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/category_supermoto"
+        android:title="@string/category_name_supermoto"
+        app:showAsAction="never" />
+</menu>
