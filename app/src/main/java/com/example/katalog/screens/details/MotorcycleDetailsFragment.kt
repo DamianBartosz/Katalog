@@ -19,7 +19,7 @@ class MotorcycleDetailsFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentMotorcycleDetailsBinding.inflate(layoutInflater)
         viewModel = ViewModelProvider(parentFragment as ViewModelStoreOwner).get(
             MotorcycleDetailsViewModel::class.java)

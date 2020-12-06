@@ -3,13 +3,11 @@ package com.example.katalog.screens.list
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.katalog.Motorcycle
+import com.example.katalog.data.Motorcycle
 import com.example.katalog.R
 import com.example.katalog.data.Category
 
@@ -28,7 +26,7 @@ class MotorcycleListFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val view: View = inflater.inflate(R.layout.fragment_motorcycle_list, container, false)
         setViewModel()
         setRecyclerView(view)

@@ -2,7 +2,6 @@ package com.example.katalog
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.katalog.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.fragment_view_pager.view.*
 
 class ViewPagerFragment : Fragment() {
 
-    val args: ViewPagerFragmentArgs by navArgs()
+    private val args: ViewPagerFragmentArgs by navArgs()
     private lateinit var viewModel: MotorcycleDetailsViewModel
     private lateinit var viewModelFactory: MotorcycleDetailsViewModelFactory
 
@@ -33,10 +33,6 @@ class ViewPagerFragment : Fragment() {
         val pagerAdapter = ViewPagerAdapter(this, fragments)
         view.pager.adapter = pagerAdapter
         return view
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
     }
 
     private fun setViewModel() {

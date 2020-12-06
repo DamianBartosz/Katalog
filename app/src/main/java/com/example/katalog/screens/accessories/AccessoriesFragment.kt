@@ -13,7 +13,7 @@ import com.example.katalog.R
 import com.example.katalog.screens.viewpager.MotorcycleDetailsViewModel
 
 class AccessoriesFragment : Fragment() {
-    lateinit var recyclerView: RecyclerView
+    private lateinit var recyclerView: RecyclerView
     private lateinit var viewModel: MotorcycleDetailsViewModel
 
     override fun onCreateView(

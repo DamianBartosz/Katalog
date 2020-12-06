@@ -9,7 +9,7 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.katalog.Motorcycle
+import com.example.katalog.data.Motorcycle
 import com.example.katalog.R
 
 class MotorcycleListViewAdapter(
@@ -17,11 +17,11 @@ class MotorcycleListViewAdapter(
     private val parent: LifecycleOwner
 ) : RecyclerView.Adapter<MotorcycleListViewAdapter.ViewHolder>() {
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val motorcycleIMGV = itemView.findViewById<ImageView>(R.id.mainMotorcycleIMGV)
-        val brandTV = itemView.findViewById<TextView>(R.id.brandTV)
-        val modelTV = itemView.findViewById<TextView>(R.id.modelTV)
-        val categoryTV = itemView.findViewById<TextView>(R.id.categoryTV)
-        val favouriteIMGB = itemView.findViewById<ImageButton>(R.id.favouriteIMGB)
+        val motorcycleIMGV: ImageView = itemView.findViewById(R.id.mainMotorcycleIMGV)
+        val brandTV: TextView = itemView.findViewById(R.id.brandTV)
+        val modelTV: TextView = itemView.findViewById(R.id.modelTV)
+        val categoryTV: TextView = itemView.findViewById(R.id.categoryTV)
+        val favouriteIMGB: ImageButton = itemView.findViewById(R.id.favouriteIMGB)
     }
 
     lateinit var motorcycleListFiltered: MutableList<Motorcycle>

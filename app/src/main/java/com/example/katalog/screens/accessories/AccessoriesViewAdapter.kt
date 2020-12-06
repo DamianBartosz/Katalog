@@ -10,7 +10,7 @@ import com.example.katalog.R
 class AccessoriesViewAdapter(private val accessories: Array<String>) :
     RecyclerView.Adapter<AccessoriesViewAdapter.ViewHolder>() {
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val accessoryTV = view.findViewById<TextView>(R.id.accessoryTV)
+        val accessoryTV: TextView = view.findViewById<TextView>(R.id.accessoryTV)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

@@ -10,12 +10,10 @@ import androidx.lifecycle.ViewModelStoreOwner
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.katalog.R
-import com.example.katalog.screens.list.MotorcycleListViewAdapter
-import com.example.katalog.screens.list.MotorcycleListViewModel
 import com.example.katalog.screens.viewpager.MotorcycleDetailsViewModel
 
 class GalleryFragment : Fragment() {
-    lateinit var recyclerView: RecyclerView
+    private lateinit var recyclerView: RecyclerView
     private lateinit var viewModel: MotorcycleDetailsViewModel
 
     override fun onCreateView(
